@@ -195,12 +195,12 @@ insmod all_video
 set default="0"
 set timeout=30
 
-menuentry "Try Ubuntu FS without installing" {
+menuentry "Try Ubuntu Scratch without installing" {
     linux /casper/vmlinuz boot=casper nopersistent toram quiet splash ---
     initrd /casper/initrd
 }
 
-menuentry "Install Ubuntu FS" {
+menuentry "Install Ubuntu Scratch" {
     linux /casper/vmlinuz boot=casper only-ubiquity quiet splash ---
     initrd /casper/initrd
 }
